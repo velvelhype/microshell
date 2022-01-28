@@ -1,0 +1,7 @@
+cat a.txt 
+
+cat a.txt | wc -l 
+
+いい設計
+
+描き直したい

@@ -1,6 +1,17 @@
-#include <unistd.h>
+#include "minishell.h"
 
-int main(int ac, char **argv, char **envp)
+void	parse()
 {
-	execve("bin/bash", argv, envp);
+	// execve();
+}
+
+int		main()
+{
+	char	*save;
+    while ((save = readline("microshell > "))) 
+	{
+		printf("readlined: %s\n", save);
+		add_history(save);
+		parse();
+	}
 }
